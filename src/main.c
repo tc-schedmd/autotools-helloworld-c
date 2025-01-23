@@ -1,11 +1,9 @@
-#include <config.h>
 #include <stdio.h>
 
-int
-main (void)
-{
-  puts ("Hello World!");
-  puts ("This is " PACKAGE_STRING ".");
-  return 0;
+extern int foo(int);
+
+int main (void) {
+	printf("%d\n", foo(1));
+	return 0;
 }
 
