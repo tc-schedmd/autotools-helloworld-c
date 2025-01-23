@@ -1,0 +1,6 @@
+#!/bin/bash -e
+git clean -fd
+autoreconf --install
+./configure
+make
+./src/hello
